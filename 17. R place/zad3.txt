@@ -1,0 +1,53 @@
+Клиентът праща заявка(Request) към сървъра.
+Сървърът получава заявката. Сървърът обработва заявката.
+Сървърът връща отговор (response) към клиента.
+
+HTTP Request:
+HEAD:
+    METHOD: GET/ PUT/ DELETE/ POST
+    URL: (Uniform Resource Locator) http://9gag.com/kartinki/pesho.jpg?gosho=3&ivan=12&ime=zelka
+        Protocol: http
+        Site address: 9gag.com
+        Path: /kartinki/pesho.jpg
+        Request parameters: gosho=3&ivan=12&ime=zelka
+    HEADERS: допълнителна информация за заявката
+BODY/ PAYLOAD: може да е файл/ може да е празно
+
+(когато правим GET или DELETE request - тогава задължително BODY трябва да е празно)
+
+HTTP Response:
+HEAD:
+    Status Code: 200 OK/ 400 Bad Request/ 500 Server Error
+    HEADERS: допълнителна информация за заявката
+BODY/ PAYLOAD: може да е файл/ може да е празно
+
+
+1. Запишете присъствия: ohcflg
+1.2. Копирайте от school.telerikacademy.com моят server.js файл
+1.3. Ако не сте - изпълнете тези команди от същата директория като server.js
+    - npm init
+    - npm install express
+    - npm start - за пускане
+2. При GET Request към localhost:3000/ -> зарежда се start.html от code.zip
+След това направете базовия код от code.zip да работи и да се рисува анимирано човече.
+Няма да са ни нужни картинките. Премахнете всички картинки от папка images.
+
+3. Заредете canvas-a (двумерния масив от цветове от server.js) 
+в променлива в script.js
+
+Трябва да направите GET заявка към localhost:3000/map за да получите текста на таблицата.
+JSON.parse()
+
+А КАК СЕ ПРАВИ HTTP заявка през браузъра? Прочетете текста от качения линк и го подкарайте.
+
+
+Домашна работа:
+1. Довършете R/Place
+- да се рисува таблицата, която е получена от сървъра
+- при клик - там където сме кликнали - слагаме цвят там
+- меню за избор на цветовете
+
+2. Добавете към сървъра път за триене на всичко
+
+ПРИ DELETE request към localhost:3000/map?password=abcde - всички клетки стават бяли
+- нека само ако човека подаде правилната парола като query parametър - да може да трие

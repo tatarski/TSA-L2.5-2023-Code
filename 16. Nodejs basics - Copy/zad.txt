@@ -1,0 +1,79 @@
+
+0. Запишете си присъствието с парола: tylbue
+1. Инсталирайте си node.js
+2. Създайте файла server.js
+3. Напишете console.log("ASDFG") във файла.
+- Отворете CMD или терминал във VSCode
+- Навигирайте до директорията, в която е server.js
+- Изпълнете командата node server.js
+(командата dir, cd, node)
+dir
+cd име_на_директория
+cd ..
+cd .
+node server.js
+
+
+
+
+
+
+
+
+
+
+
+4. Програмиране на node.js. Напишете следните фунции
+function createCanvas(shir, vis) {
+    let canvas = [];
+    for(let i = 0; i < shir; i++) {
+        canvas[i] = [];
+        for(let j = 0; j < vis; j++) {
+            canvas[i][j] = {
+                r: 255,
+                g: 255,
+                b: 255
+            }
+        }
+    }
+    return canvas;
+}
+let myCanvas = createCanvas(100, 100);
+function changeColor(x, y, red, green, blue) {
+    myCanvas[x][y].r=red;
+    myCanvas[x][y].g=green;
+    myCanvas[x][y].b=blue;
+}
+Тествате дали горните функции работят.
+
+
+HTTP - Hypertext Transfer Protocol (ТОЗИ Е ЗА НАС)
+HTTPS - HTTP secure (като HTTP ама с криптиране)
+TCP - Transmission Control Protocol
+UDP - User Datagram Protocol
+SSH 
+
+
+5. Инсталирайте express.js
+(в папката на проекта)
+npm install express
+
+- това добавя 3 неща
+package.json
+package-lock.json
+node_modules папката
+
+6. Напишете основия магически код
+7. Изберете си ваш собствен PORT
+8. Стартирайте сървъра
+9. Направете GET заявка чрез браузъра.
+Трябва да посетите url адреса:
+localhost:3000/zelka
+10. Направете GET заявка чрез POSTMAN
+Разгледайте HEADER-ите, които получавате.
+11. Покажете ми докъде сте стигнали.
+
+Домашна работа:
+1. Напишете в google : express tutorial
+2. Напишете в google : HTTP tutorial
+3. Помъчете се сами да напишете прост сървър, който прави нещо по-интересно.

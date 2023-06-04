@@ -1,0 +1,64 @@
+Домашна работа:
+1. Направете функцията narisuvaiSegment(.....)
+2. Направете цяла окръжност от сегменти, които се въртят.
+3. Същата като 2ра, но цветовете са случайно избрани и броят на сегментите в окръжността е избран от потребителя с prompt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ЗАДАЧИ2:
+-1. Погледнете zle.si/plovdiv
+0. Запишете си присъствието с парола: po1npq
+1. Нарисувайте кръг, направен от 4 сегмента.
+Направете функцията:
+function drawCircle(centerX, centerY, rad,zavurtane) {
+}
+
+Използвайте функцията drawSegment, за да направите горната функция
+
+2. Направете така, че броя на сегментите в едно кръгче да е параметър на функцията drawCircle.
+function drawCircle(centerX, centerY, rad, zavurtane, br_segmenti) {
+}
+
+3. Направете така, че цветовете на сегментите в едно кръгче да се подават като параметър на функцията drawCircle
+function drawCircle(centerX, centerY, rad, zavurtane, br_segmenti, cvetove) {
+}
+drawCircle(100, 200, 1.28, 5, 
+["red", "green", "blue", "purple", "orange"])
+
+4. Напишете функция, която приема cvetove, brCvetove и zavurtane като параметри и връща като резултат цвета, посочен от стрелката.
+function kakuvECvetaOtdolu(cvetove, brCvetove, zavurtane) { ...... }
+
+ПОЧИВКА ДО 14:25
+
+Домашна работа:
+1. Направете играта color switch:
+- за рисуване на кръгчетата ползвайте drawCircle
+- за проверка дали сме се ударили в чужд цвят - ползвайте kakuvECvetaOtgore и kakuvECvetaOtdolu
+
+function bluskamLiSeSKrugche()
